@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+       {{msg}}  
+       <div v-if="isLogin">欢迎</div>
+       <div v-else>不欢迎</div> 
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        // vm是对象  Vue是类
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            msg: 'helloworld',
+            isLogin: false
+        }
+    });
+    
+    </script>
+</body>
+</html>
